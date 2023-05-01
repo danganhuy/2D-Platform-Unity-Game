@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PlayerLife : MonoBehaviour
+{
+    private Rigidbody2D rigid;
+    private Animator animator;
+
+    [SerializeField] private AudioSource deathSound;
+    private void Start()
+    {
+        rigid = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+
+    private void OnCollisionStay2D(Collision2D other) {
+        if (other.gameObject.CompareTag("Trap"))
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        deathSound.Play();
+        rigid.bodyType = RigidbodyType2D.Static;
+        animator.SetTrigger("death");
+    }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+}
