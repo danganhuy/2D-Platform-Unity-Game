@@ -6,10 +6,16 @@ using UnityEngine.UI;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int cherries = 0;
+    public static int cherries = 0;
+    public static int totalCherries;
     public Text cherriesText;
     [SerializeField] private AudioSource collectionSound;
-    
+
+    private void Start()
+    {
+        cherries = 0;
+        cherriesText.text = "Cherries: " + cherries + "\nTotal Cherries: " + totalCherries;
+    }
     private void OnTriggerEnter2D(Collider2D collision) 
     {
         if (collision.gameObject.CompareTag("Cherry"))
@@ -17,7 +23,8 @@ public class ItemCollector : MonoBehaviour
             collectionSound.Play();
             Destroy(collision.gameObject);
             cherries++;
-            cherriesText.text = "Cherries: " + cherries;
+            totalCherries++;
+            cherriesText.text = "Cherries: " + cherries + "\nTotal Cherries: " + totalCherries;
         }
     }
 }

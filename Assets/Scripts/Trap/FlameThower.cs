@@ -40,9 +40,6 @@ public class FlameThower : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
-        Debug.Log(activated);
-        Debug.Log(this.gameObject.tag);
         if (other.gameObject.name == "Player" && activated)
         {
             this.gameObject.tag = "Trap";

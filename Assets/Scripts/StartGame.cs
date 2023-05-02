@@ -7,7 +7,7 @@ public class StartGame : MonoBehaviour
 {
     public void startGame()
     {
-        if (SceneManager.GetActiveScene().buildIndex != 3)
+        if (SceneManager.GetActiveScene().buildIndex != 8)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else
             SceneManager.LoadScene(1);

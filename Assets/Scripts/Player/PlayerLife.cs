@@ -7,6 +7,7 @@ public class PlayerLife : MonoBehaviour
 {
     private Rigidbody2D rigid;
     private Animator animator;
+    private bool dead = false;
 
     [SerializeField] private AudioSource deathSound;
     private void Start()
@@ -16,9 +17,10 @@ public class PlayerLife : MonoBehaviour
     }
 
     private void OnCollisionStay2D(Collision2D other) {
-        if (other.gameObject.CompareTag("Trap"))
+        if (other.gameObject.CompareTag("Trap") && !dead)
         {
             Die();
+            dead = true;
         }
     }
 
@@ -26,6 +28,7 @@ public class PlayerLife : MonoBehaviour
     {
         deathSound.Play();
         rigid.bodyType = RigidbodyType2D.Static;
+        ItemCollector.totalCherries -= ItemCollector.cherries;
         animator.SetTrigger("death");
     }
 
