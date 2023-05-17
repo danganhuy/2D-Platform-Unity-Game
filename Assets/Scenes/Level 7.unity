@@ -47773,6 +47773,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1159043079}
+    - target: {fileID: 4096000180726468839, guid: 420ca537749a7aa42b12dfa9c34ee25b, type: 3}
+      propertyPath: speed
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 420ca537749a7aa42b12dfa9c34ee25b, type: 3}
 --- !u!4 &1637450358 stripped
@@ -49318,6 +49322,10 @@ PrefabInstance:
       propertyPath: cherriesText
       value: 
       objectReference: {fileID: 766987691}
+    - target: {fileID: 9198078520304148524, guid: 1fdbe75225c5bc44285c98ebe3cad005, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9198078520304148525, guid: 1fdbe75225c5bc44285c98ebe3cad005, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -49364,7 +49372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9198078520304148527, guid: 1fdbe75225c5bc44285c98ebe3cad005, type: 3}
       propertyPath: jumpForce
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9198078520304148527, guid: 1fdbe75225c5bc44285c98ebe3cad005, type: 3}
       propertyPath: jumpableGround.m_Bits
