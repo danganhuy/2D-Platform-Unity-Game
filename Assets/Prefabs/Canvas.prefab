@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 5932445162883763325}
   finishMenu: {fileID: 5932445163340069565}
-  cherriesText: {fileID: 6271908240024391231}
+  cherriesText: {fileID: 4490834802600352278}
 --- !u!1 &5932445164046127358
 GameObject:
   m_ObjectHideFlags: 0

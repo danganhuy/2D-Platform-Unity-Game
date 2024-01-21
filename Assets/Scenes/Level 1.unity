@@ -3811,17 +3811,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6420256733711528910, guid: d6e88a5053cc8fa439bfe90e52726b0d, type: 3}
   m_PrefabInstance: {fileID: 1238341946}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &766987691 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5932445163033336519, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
-  m_PrefabInstance: {fileID: 5932445163797436268}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &777695511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37823,7 +37812,7 @@ Transform:
   - {fileID: 1596061222}
   - {fileID: 2297577}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947899362
 GameObject:
@@ -38301,7 +38290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 710370808998414024, guid: eeb757b8639a29c418f846bbf0646aee, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 710370808998414024, guid: eeb757b8639a29c418f846bbf0646aee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38418,6 +38407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4490834802600352278, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5932445163033336519, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
       propertyPath: m_Text
       value: 'Cherries: '
@@ -38583,7 +38576,7 @@ PrefabInstance:
     - target: {fileID: 9198078520304148521, guid: 1fdbe75225c5bc44285c98ebe3cad005, type: 3}
       propertyPath: cherriesText
       value: 
-      objectReference: {fileID: 766987691}
+      objectReference: {fileID: 0}
     - target: {fileID: 9198078520304148525, guid: 1fdbe75225c5bc44285c98ebe3cad005, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -8,7 +8,6 @@ public class InGameMenu : MonoBehaviour
     private bool GameIsPause = false;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject finishMenu;
-    [SerializeField] private Text cherriesText;
 
     private void Start()
     {
@@ -24,7 +23,9 @@ public class InGameMenu : MonoBehaviour
     }
     public void UpdateText(int cherries)
     {
-        cherriesText.text = "Cherries: " + cherries;
+        GameObject cherriesText = GameObject.Find("/Canvas/Text");
+        Debug.Log(cherriesText);
+        cherriesText.GetComponent<Text>().text = "Cherries: " + cherries;
     }
     public void Restart()
     {
