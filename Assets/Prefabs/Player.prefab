@@ -183,6 +183,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &9198078520304148501
 AudioSource:
   m_ObjectHideFlags: 0
@@ -501,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c92b9b666ca45fd4a85b6c88a7507179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cherriesText: {fileID: 0}
+  text: {fileID: 5932445164010204442, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
   collectionSound: {fileID: 9198078520304148500}
 --- !u!114 &9198078520304148522
 MonoBehaviour:

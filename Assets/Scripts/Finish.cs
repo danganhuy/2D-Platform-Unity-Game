@@ -7,6 +7,7 @@ public class Finish : MonoBehaviour
 {
     private AudioSource fininshSound;
     private bool levelCompeleted = false;
+    [SerializeField] private InGameMenu finishMenu;
     private void Start()
     {
         fininshSound = GetComponent<AudioSource>();
@@ -24,7 +25,6 @@ public class Finish : MonoBehaviour
 
     private void completeLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log(SceneManager.GetActiveScene().buildIndex);
+        finishMenu.FinishMenu();
     }
 }

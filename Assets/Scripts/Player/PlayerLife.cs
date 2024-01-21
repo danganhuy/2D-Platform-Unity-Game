@@ -28,7 +28,6 @@ public class PlayerLife : MonoBehaviour
     {
         deathSound.Play();
         rigid.bodyType = RigidbodyType2D.Static;
-        ItemCollector.totalCherries -= ItemCollector.cherries;
         animator.SetTrigger("death");
     }
 
