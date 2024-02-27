@@ -8,11 +8,20 @@ public class InGameMenu : MonoBehaviour
     private bool GameIsPause = false;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject finishMenu;
-
+    [SerializeField] private GameObject option;
+    private AudioSource MusicAudio;
+    private AudioSource[] SoundAudio;
+    private void GetAudioSource()
+    {
+        MusicAudio = GameObject.Find("BG Music").GetComponent<AudioSource>();
+        SoundAudio = GameObject.Find("Player").GetComponents<AudioSource>();
+    }
     private void Start()
     {
+        GetAudioSource();
         GameIsPause = false;
         Time.timeScale = 1f;
+        UpdateVolume();
     }
     void Update()
     {
@@ -24,7 +33,6 @@ public class InGameMenu : MonoBehaviour
     public void UpdateText(int cherries)
     {
         GameObject cherriesText = GameObject.Find("/Canvas/Text");
-        Debug.Log(cherriesText);
         cherriesText.GetComponent<Text>().text = "Cherries: " + cherries;
     }
     public void Restart()
@@ -54,10 +62,29 @@ public class InGameMenu : MonoBehaviour
             pauseMenu.SetActive(false);
             GameIsPause = false;
             Time.timeScale = 1f;
+            UpdateVolume();
         }
+    }
+
+    [System.Obsolete]
+    public void Option()
+    {
+        option.SetActive(!option.active);
     }
     public void BackToMenu()
     {
         PlayerProgress.ToMenu();
+    }
+    public void UpdateVolume()
+    {
+        MusicAudio.volume = Volume.musicVolume;
+        foreach (AudioSource sound in SoundAudio)
+        {
+            sound.volume = Volume.soundVolume;
+        }
+        Debug.Log($"Music: {Volume.musicVolume}");
+        Debug.Log($"Music: {MusicAudio.volume}");
+        Debug.Log($"Sound: {Volume.soundVolume}");
+        Debug.Log($"Sound: {SoundAudio[1].volume}");
     }
 }

@@ -34,17 +34,17 @@ public class PlayerProgress
                 PlayerProgress.cherriesCollected[i] = 0;
             }
         }
-        public void LoadData(SaveData data)
+        public void LoadData()
         {
-            PlayerProgress.unlocked = data.unlocked;
-            PlayerProgress.cherriesCollected = data.cherriesCollected;
+            PlayerProgress.unlocked = this.unlocked;
+            PlayerProgress.cherriesCollected = this.cherriesCollected;
         }
     }
-    public PlayerProgress(SaveData data)
-    {
-        PlayerProgress.unlocked = data.unlocked;
-        PlayerProgress.cherriesCollected = data.cherriesCollected;
-    }
+    //public PlayerProgress(SaveData data)
+    //{
+    //    PlayerProgress.unlocked = data.unlocked;
+    //    PlayerProgress.cherriesCollected = data.cherriesCollected;
+    //}
     public static void BackToMenu()
     {
         SceneManager.LoadSceneAsync(0);

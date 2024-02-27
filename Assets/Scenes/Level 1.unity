@@ -37848,6 +37848,11 @@ Transform:
   m_Father: {fileID: 2297577}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1949298721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7233643041362116224, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+  m_PrefabInstance: {fileID: 5932445163797436268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1968808952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420256733711528910, guid: d6e88a5053cc8fa439bfe90e52726b0d, type: 3}
@@ -38411,9 +38416,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5932445162855113580, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932445162855113580, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1949298721}
+    - target: {fileID: 5932445162855113580, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932445162855113580, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932445162855113580, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932445162883763325, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5932445163033336519, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
       propertyPath: m_Text
       value: 'Cherries: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5932445163340069565, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5932445164010204440, guid: 92c00ada86b062a4eb3866de00179cd6, type: 3}
       propertyPath: m_Pivot.x
@@ -38512,6 +38545,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6255996375947924352, guid: fcac589a679c8364bb38f01489e353ab, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6255996375947924353, guid: fcac589a679c8364bb38f01489e353ab, type: 3}
       propertyPath: m_Name
       value: BG Music

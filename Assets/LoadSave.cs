@@ -8,6 +8,7 @@ public class LoadSave : MonoBehaviour
     void Start()
     {
         SaveSystem.LoadGame();
+        SaveSystem.LoadSetting();
         obj.CheckButtonState();
     }
 }
